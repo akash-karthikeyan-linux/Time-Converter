@@ -7,10 +7,12 @@ let errorMsg = document.getElementById("errorMsg");
 function convertToSeconds(){
     if(hoursInput.value === ""){
         timeInSeconds.textContent = "";
+        timeInSeconds.classList.toggle("time-para");
         errorMsg.textContent = "Please enter a valid number of hours.";
     }
     else if(minutesInput.value === ""){
         timeInSeconds.textContent = "";
+        timeInSeconds.classList.toggle("time-para");
         errorMsg.textContent = "Please enter a valid number of minutes.";
     }
     else{
